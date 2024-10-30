@@ -14,23 +14,27 @@
     "nuxt"
   ],
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --log-level=verbose",
     "format": "prettier --write .",
     "dev": "pruvious dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "prepare": "nuxt prepare",
+    "postinstall": "pnpm run prepare"
   },
   "dependencies": {
-    "nuxt": "^3.13.2",
     "@crearis/vue": "^0.0.8",
-    "pruvious": "^3.13.2",
-    "vue": "^3.5.8",
-    "vue-router": "^4.4.5",
-    "tailwindcss": "^3.4.7",
+    "nuxt": "^3.13.2",
     "prettier": "^3.3.0",
     "prettier-plugin-organize-attributes": "^1.0.0",
-    "prettier-plugin-tailwindcss": "^0.6.5"
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "pruvious": "^3.13.2",
+    "vue": "^3.5.8",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.12.2"
   },
   "packageManager": "pnpm@9.12.3"
 }

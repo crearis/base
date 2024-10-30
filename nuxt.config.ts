@@ -1,12 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: '2024-10-30',
   devtools: { enabled: true },
-  modules: ['pruvious'],
-
-  pruvious: {
-    jwt: {
-      secretKey: '2UclR3xeqXkUW_LOVM28lEgmiEH6bj2KSQ-Fq_u3z-UgQu8EK8FHB_tMD-E0-wFK'
-    }
-  }
+  modules: ['@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', 'pruvious'],
+  googleFonts: {
+    families: {
+      Lato: {
+        wght: [400, 700],
+        ital: [400, 700],
+      },
+      Poppins: [500],
+    },
+  },
 })
