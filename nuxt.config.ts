@@ -12,4 +12,14 @@ export default defineNuxtConfig({
       Poppins: [500],
     },
   },
+  build: {
+    transpile: [
+      'tslib',
+      '@apollo/client',
+      '@apollo/client/core',
+      '@vue/apollo-composable',
+      '@vue/apollo-option',
+      '@crearis/odoo-sdk-api-client',
+    ],
+  },
 })

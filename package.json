@@ -19,11 +19,17 @@
     "dev": "pruvious dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "prepare": "nuxt prepare",
-    "postinstall": "pnpm run prepare"
+    "codegen": "graphql-codegen",
+    "prepare": "nuxt prepare ",
+    "postinstall": "pnpm run prepare && pnpm run codegen"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.6",
+    "@azure/msal-node": "^2.7.0",
     "@crearis/vue": "^0.0.8",
+    "react": "^18.2.0",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
     "nuxt": "^3.13.2",
     "prettier": "^3.3.0",
     "prettier-plugin-organize-attributes": "^1.0.0",
