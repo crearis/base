@@ -6,6 +6,6 @@
  *
  * @packageDocumentation
  */
-export * from './types';
-export * from './methods';
+export * from './types'
+export * from './methods'
 //# sourceMappingURL=api-extractor.data.d.ts.map
