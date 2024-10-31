@@ -9,6 +9,7 @@ pnpm-lock.yaml
 .pruvious
 .uploads
 node_modules
+graphql/gql
 apps/*/dist
 apps/*/.nuxt
 apps/*/node_modules
